@@ -3,7 +3,7 @@ library(prophet)
 
 df <- read.csv("C:\\Users\\Jaydeep Borkar\\Desktop\\AQIBg.txt")
 m <- prophet(df)
-future <- make_future_dataframe(m, periods = 1)
+future <- make_future_dataframe(m, periods = 99)
 tail(future)
 
 
